@@ -9,6 +9,7 @@ public class View {
     static final String MESSAGE_START = "New game starts!";
     static final String MESSAGE_EXIT = "Press 'exit' if you'd like to exit.";
     static final String MESSAGE_WRONG = "You entered a wrong number or command. \nEnter a number from 0 to 100 or " + MESSAGE_EXIT;
+    static final String MESSAGE_WRONG_NUMBER = "You entered a wrong number. \nEnter a number from 0 to 100 or " + MESSAGE_EXIT;
     static final String MESSAGE_ATTEMPTS = "All attempts: ";
 
     public void showMessage(String message) {

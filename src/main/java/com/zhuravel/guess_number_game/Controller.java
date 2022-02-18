@@ -23,6 +23,11 @@ public class Controller {
     }
 
     private boolean checkNumber(Integer number) {
+        if (number < 0 || number > 100) {
+            view.showMessage(View.MESSAGE_WRONG_NUMBER);
+            return false;
+        }
+
         switch (model.checkNumber(number)) {
             case -1 -> {
                 view.showMessage(number + View.MESSAGE_LESS);
